@@ -12,6 +12,7 @@ public class FetchCountEMPTest {
 		Connection con=null;
 		Statement st=null;
 		ResultSet rs=null;
+		
 		try {
 			//load the jdbc driver class
 			Class.forName("oracle.jdbc.driver.OracleDriver");
