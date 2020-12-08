@@ -11,6 +11,7 @@ public class EmpTestAssignment {
 		Connection con=null;
 		Statement st=null;
 		ResultSet rs=null;
+		boolean condition=false;
 		try {
 			//loading jdbc class
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -22,8 +23,15 @@ public class EmpTestAssignment {
 			rs=st.executeQuery(query);
 			//print the output from resultset
 			System.out.println("EMPNO\t"+"ENAME\t"+"JOB");
-			if(rs.next()) {
+		
+			if(rs!=null) {
+			while(rs.next()) {
 				System.err.println(rs.getInt(1)+"\t"+rs.getString(2)+"\t"+rs.getString(3));
+				condition=true;
+			}
+			}
+			if(condition!=true) {
+				System.out.println("record  not found");
 			}
 			//System.out.println("Class loaded suseccfully");
 		} catch (ClassNotFoundException e) {
