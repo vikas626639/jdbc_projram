@@ -14,7 +14,7 @@ public class SelectTest {
 			//ragister jdbc driver
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			//establish the connection 
-			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "system","manager");
+		con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "system","manager");
 			//create jdbc Statement object
 			st=con.createStatement();
 			//execute the query and process the result set
