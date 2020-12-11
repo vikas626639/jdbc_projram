@@ -1,0 +1,15 @@
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'application'
+}
+
+repositories {
+    // Use jcenter for resolving dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+dependencies {
+     // https://mvnrepository.com/artifact/com.oracle/ojdbc6
+compile group: 'com.oracle', name: 'ojdbc6', version: '12.1.0.1-atlassian-hosted'
+}

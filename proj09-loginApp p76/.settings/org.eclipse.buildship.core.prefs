@@ -1,0 +1,13 @@
+arguments=
+auto.sync=true
+build.scans.enabled=false
+connection.gradle.distribution=GRADLE_DISTRIBUTION(VERSION(6.0))
+connection.project.dir=
+eclipse.preferences.version=1
+gradle.user.home=E\:/apache/gradle-6.0/bin
+java.home=C\:/Program Files/Java/jre1.8.0_271
+jvm.arguments=
+offline.mode=false
+override.workspace.settings=true
+show.console.view=false
+show.executions.view=false
